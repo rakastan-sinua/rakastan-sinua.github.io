@@ -140,8 +140,8 @@ a:focus {
 .intro {
     display: table;
     width: 100%;
-    height: auto;
-    padding: 150px 0;
+    height: 100%;
+    padding: 0;
     text-align: center;
     color: #fff;
     background: url(/img/A6302701.jpg) no-repeat bottom center scroll;
