@@ -154,7 +154,9 @@ a:focus {
 
 .intro .intro-body {
     display: table-cell;
-    vertical-align: middle;
+    /*vertical-align: middle;*/
+    vertical-align: bottom;
+    padding-bottom: 0;
 }
 
 .intro .intro-body .brand-heading {
