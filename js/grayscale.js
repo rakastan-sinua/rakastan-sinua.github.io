@@ -8,6 +8,8 @@
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
+        var calButton = document.getElementsByClassName("atcb-link")[0];
+        calButton.innerText =  "예매하기";
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
@@ -34,6 +36,19 @@ $('.navbar-collapse ul li a').click(function() {
 $("a").mouseup(function(){
     $(this).blur();
 })
+
+// Calendar
+$(function () {
+    if (window.addtocalendar)if(typeof window.addtocalendar.start == "function")return;
+    if (window.ifaddtocalendar == undefined) { window.ifaddtocalendar = 1;
+        var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+        s.type = 'text/javascript';s.charset = 'UTF-8';s.async = true;
+        s.src = ('https:' == window.location.protocol ? 'https' : 'http')+'://addtocalendar.com/atc/1.5/atc.min.js';
+        var h = d[g]('body')[0];h.appendChild(s);
+    }
+});
+
+
 
 // Google Maps Scripts
 // When the window has finished loading create our google map below
@@ -184,4 +199,7 @@ function init() {
         map: map,
         // icon: image
     });
+
+
+
 }

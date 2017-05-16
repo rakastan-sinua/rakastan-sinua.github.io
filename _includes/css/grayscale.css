@@ -564,3 +564,32 @@ body {
     padding-right:0;
     padding-left:0;
 }
+
+.atc-style-blue .atcb-link,
+.atc-style-blue .atcb-link:hover,
+.atc-style-blue .atcb-link:active,
+.atc-style-blue .atcb-link:focus
+{
+    margin: 0;
+    padding: 7px 25px;
+    color: #fff;
+    font-family: "Verdana";
+    font-size: 14px;
+    text-decoration: none;
+    outline: none;
+    line-height: 20px;
+    vertical-align: middle;
+    background: rgb(45,45,45);
+    box-shadow: 0 0 40px rgba(0, 0, 0, .13) inset;
+    border-radius: 4px;
+    zoom: 1;
+}
+
+/*.atcb-link {
+    visibility: hidden;
+}
+
+.atcb-link:after {
+    visibility: visible;
+    content: "haha";
+}*/
