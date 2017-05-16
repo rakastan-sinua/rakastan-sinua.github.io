@@ -6,10 +6,14 @@
 
 // jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
+    var calButton = document.getElementsByClassName("atcb-link")[0];
+    if(calButton.innerText =  "Add to Calendar") {
+        calButton.innerText =  "예매하기";
+    }
+
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
-        var calButton = document.getElementsByClassName("atcb-link")[0];
-        calButton.innerText =  "예매하기";
+
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
@@ -199,7 +203,5 @@ function init() {
         map: map,
         // icon: image
     });
-
-
 
 }
